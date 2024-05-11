@@ -1,0 +1,17 @@
+modules:
+  jira:projectPage:
+    - key: project-page-hello-world-project-page
+      function: main
+      title: project-page
+  function:
+    - key: main
+      handler: index.run
+app:
+  id: ari:cloud:ecosystem::app/8aff38b0-090b-4d47-a761-f685e28c8796
+permissions:
+  external:
+    fetch:
+      backend:
+        - api.github.com
+        - api.github.cloud
+
