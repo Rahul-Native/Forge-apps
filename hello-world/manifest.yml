@@ -1,0 +1,16 @@
+modules:
+  customUI:
+    - key: project-page
+      resource: static
+      resolver:
+        function: github-handler
+
+  function:
+    - key: github-handler
+      handler: src/resolver.handler  # This should point to your resolver function
+
+permissions:
+  external:
+    fetch:
+      client:
+        - 'https://api.github.com' 
