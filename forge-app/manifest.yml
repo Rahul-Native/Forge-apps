@@ -1,0 +1,17 @@
+modules:
+  jira:projectPage:
+    - key: forge-app-hello-world-project-page
+      function: main
+      title: forge-app
+  function:
+    - key: main
+      handler: index.run
+app:
+  id: ari:cloud:ecosystem::app/7831acfa-803b-4e0a-8ece-591f92cbce06
+
+permissions:
+  external:
+    fetch:
+      backend:
+        - api.github.com
+        - api.github.cloud
