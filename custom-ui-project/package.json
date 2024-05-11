@@ -1,0 +1,16 @@
+{
+  "name": "jira-project-page-custom-ui",
+  "version": "1.0.43",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-plugin-react-hooks": "^4.6.0"
+  },
+  "dependencies": {
+    "@forge/api": "^3.4.0",
+    "@forge/bridge": "^3.3.0",
+    "@forge/resolver": "1.5.31"
+  }
+}

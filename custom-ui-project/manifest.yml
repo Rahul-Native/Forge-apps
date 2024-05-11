@@ -1,0 +1,20 @@
+modules:
+  jira:projectPage:
+    - key: custom-ui-project-hello-world-project-page
+      resource: main
+      resolver:
+        function: resolver
+      title: custom-ui-project
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: main
+    path: static/hello-world/build
+permissions:
+  external:
+    fetch:
+      client:
+        - 'https://api.github.com'
+app:
+  id: ari:cloud:ecosystem::app/271eda28-5656-460c-bc19-20badb704224
