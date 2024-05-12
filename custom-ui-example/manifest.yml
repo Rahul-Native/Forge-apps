@@ -1,0 +1,26 @@
+modules:
+  jira:issuePanel:
+    - key: custom-ui-example-hello-world-panel
+      resource: main
+      resolver:
+        function: resolver
+      viewportSize: medium
+      title: Hello World from Rahul
+      icon: https://developer.atlassian.com/platform/forge/images/issue-panel-icon.svg
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: main
+    path: static/hello-world/build
+    tunnel:
+      port: 3000
+permissions:
+  external:
+    fetch:
+      backend:
+        - 'https://api.github.com'
+  scopes:
+    - read:jira-work
+app:
+  id: ari:cloud:ecosystem::app/2ec1418e-be00-4c62-8d25-6ec89e3b64a8
